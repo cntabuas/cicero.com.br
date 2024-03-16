@@ -1,0 +1,12 @@
+#- fa_class: fa-brands fa-twitter
+#  color: text-twitterblue
+#  href: https://twitter.com/xxxxxx
+- fa_class: fa-brands fa-instagram
+  color: text-instagrampurple
+  href: https://www.instagram.com/ciceropsf2018/
+- fa_class: fa-brands fa-facebook
+  color: text-facebookblue
+  href: https://www.facebook.com/pastorciceropereiradasilvafilho
+- fa_class: fa-brands fa-youtube
+  color: text-youtubered
+  href: https://www.youtube.com/pastorciceropereira

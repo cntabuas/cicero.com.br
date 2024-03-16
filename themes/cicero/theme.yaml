@@ -1,0 +1,11 @@
+name: nacional
+description: Tema default do site do Colégio Nacional (www.nacional.edu.br)
+homepage: http://www.nacional.edu.br
+tags: []
+features: []
+
+min_version: 0.111.3
+
+author:
+  name: Colégio Nacional, Departamento de Informática
+  homepage: http://www.nacional.edu.br

@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ block "title" . }}{{- .Title }} - {{ .Site.Title -}}{{ end }}</title>
+    {{- if .Description }}<meta name="description" content="{{ .Description }}" />{{ end -}}
+    {{- if .Keywords }}<meta name="keywords" content="{{ delimit .Keywords " ," }}" />{{ end -}}
+    {{- if .Params.Author }}<meta name="author" content="{{ .Params.Author}}" />{{ end -}}
+    {{- $tailwindcss := resources.Get "css/main.css" -}}
+    {{- if not hugo.IsServer }}
+    {{ $tailwindcss = $tailwindcss | resources.Minify | resources.Fingerprint }}
+    {{ end -}}
+    <link rel="stylesheet" href="{{ $tailwindcss.Permalink }}" integrity="{{ $tailwindcss.Data.Integrity }}">
+    {{ range .Site.Data.cdn }}
+    <link rel="{{ .rel }}" href="{{ .href }}" integrity="{{ .integrity }}" crossorigin="{{ .crossorigin }}" referrerpolicy="{{ .referrerpolicy }}" />
+    {{ end }}
+    {{ hugo.Generator }}
+</head>

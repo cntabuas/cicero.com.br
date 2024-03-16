@@ -1,0 +1,5 @@
+<div class="flex justify-around">
+  {{- range split .Inner "<--->" -}}
+  <div>{{ . | $.Page.RenderString }}</div>
+  {{- end -}}
+</div>

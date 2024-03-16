@@ -1,0 +1,7 @@
+/*
+Configuração base do TailwindCSS. *** NÃO MODIFIQUE ***
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,21 @@
+<nav {{ if .Site.Params.navbar.sticky }}class="sticky top-0 z-50" {{ end }}>
+  <div class="bg-primary-800 text-primary-100 flex h-16 items-center px-24">
+
+    <a href="{{ absURL "" }}"><img class="h-12 pr-4" src="{{ absURL "img/logo.png" }}" alt="Logo" /></a>
+
+    <div class="flex grow justify-end gap-8 px-4">
+      {{ range .Site.Menus.main.ByWeight }}
+      {{ if (not .Page.IsSection)}}
+      <a class="hover:text-primary-400 transition duration-150 ease-in-out" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+      {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="flex flex-row items-center justify-center gap-3 pl-4">
+      {{ range .Site.Data.social_media }}
+      <a href="{{ .href }}" target="_blank"><i class="{{ .fa_class }} {{ .color }} rounded-full text-4xl transition duration-150 ease-in-out hover:scale-125"></i></a>
+      {{ end }}
+    </div>
+ 
+  </div>
+</nav>

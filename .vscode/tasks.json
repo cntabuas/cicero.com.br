@@ -1,0 +1,22 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "tailwindcss (watch mode)",
+      "type": "shell",
+      "command": "tailwindcss -v -i ./themes/nacional/assets/css/tailwind.css -o ./themes/nacional/assets/css/main.css --watch"
+    },
+    {
+      "label": "tailwindcss",
+      "type": "shell",
+      "command": "tailwindcss -v -i ./themes/nacional/assets/css/tailwind.css -o ./themes/nacional/assets/css/main.css"
+    },
+    {
+      "label": "hugo dev",
+      "type": "shell",
+      "command": "hugo serve -D --watch --disableFastRender --ignoreCache"
+    }
+  ]
+}

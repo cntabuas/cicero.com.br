@@ -1,0 +1,15 @@
+<footer class="bg-slate-300">
+    <div class="text-center py-3">
+        <p class="text-3xl font-semibold text-slate-700">Vamos manter contato!</p>
+        <div class="text-sm mb-6 text-slate-600">Ache-nos em uma dessas plataformas.</div>
+        <div class="flex flex-row items-center justify-center gap-5">
+            {{ range .Site.Data.social_media }}
+            <a href="{{ .href }}" target="_blank"><i class="{{ .fa_class }} {{ .color }} text-3xl transition duration-150 ease-in-out hover:scale-125"></i></a>
+            {{ end }}
+        </div>
+    </div>
+    <hr class="border-slate-200" />
+    <p class="py-1 text-center text-xs text-slate-500">
+        <i class="fa-regular fa-copyright"></i> Copyright 2024, <a class="font-semibold hover:text-slate-800" href="{{ absURL "" }}">Cícero</a>. Feito com <i class="fa-solid fa-heart text-red-600"></i> usando softwares grátis: <a class="font-semibold hover:text-slate-800" href="https://gohugo.io">Hugo</a> e <a class="font-semibold hover:text-slate-800" href="https://tailwindcss.com">Tailwindcss</a>.
+    </p>
+</footer>

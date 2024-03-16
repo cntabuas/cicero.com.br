@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/go
+{
+	"name": "cicero.com.br",
+	"dockerFile": "Dockerfile",
+	"forwardPorts": [
+		1313 // Hugo's default port
+	],
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "go version",
+	// Comment out the next line to run as root
+	"remoteUser": "vscode",
+	//]
+	"customizations": {
+		"vscode": {
+			// Use 'settings' to set *default* container specific settings.json values on container create.
+			// You can edit these settings after create using File > Preferences > Settings > Remote.
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"html.format.wrapLineLength": 0,
+				"html.format.templating": true,
+				"editor.defaultFormatter": "vscode.html-language-features"
+				// "[html]": {
+				//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+				//   "editor.formatOnSave": true
+				// }
+			},
+			"extensions": [
+				"eamodio.gitlens",
+				"redhat.vscode-yaml",
+				"DavidAnson.vscode-markdownlint",
+				"bradlc.vscode-tailwindcss"
+				//"esbenp.prettier-vscode"
+			]
+		}
+	}
+}

@@ -1,0 +1,16 @@
+baseURL: https://cicero.com.br/
+languageCode: pt-br
+title: Cícero
+theme: cicero
+
+ignoreFiles:
+- tailwind\.config\.js
+- README\.md
+
+enableGitInfo: false
+
+# sectionPagesMenu: main
+
+params:
+  navbar:
+    sticky: true

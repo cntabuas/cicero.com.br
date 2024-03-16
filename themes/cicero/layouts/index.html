@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<article class="prose prose-slate max-w-none">{{ .Content }}</article>
+
+{{ range .Site.Data.embla.cdn }}
+<script type="text/javascript" src="{{ .src }}" integrity="{{ .integrity }}" crossorigin="{{ .crossorigin }}"></script>
+{{ end }}
+<script type="text/javascript">
+  const emblaRoot = document.getElementById('embla__root')
+  const emblaViewport = emblaRoot.querySelector('#embla__viewport')
+
+  const emblaOptions = { duration: 25, loop: true };
+  const autoplayOptions = { delay: 7000, stopOnInteraction: true };
+
+  const embla = EmblaCarousel(emblaViewport, emblaOptions, [EmblaCarouselAutoplay(autoplayOptions)])
+
+  // Grab button nodes
+  const prevButtonNode = emblaRoot.querySelector('#embla__prev')
+  const nextButtonNode = emblaRoot.querySelector('#embla__next')
+  // Add click listeners
+  prevButtonNode.addEventListener('click', embla.scrollPrev, false)
+  nextButtonNode.addEventListener('click', embla.scrollNext, false)
+</script>
+{{ end }}

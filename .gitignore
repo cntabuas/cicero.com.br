@@ -1,0 +1,11 @@
+# Arquivos gerado pelo hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# lock temporário durante build
+.hugo_build.lock
+
+# Lixo do MacOS
+.DS_Store

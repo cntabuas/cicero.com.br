@@ -1,0 +1,63 @@
+---
+title: Fale Conosco
+
+menu:
+  main:
+    weight: 2
+---
+
+<form target="_blank" action="https://formsubmit.co/email@aqui.com" method="POST">
+  <div class="grid grid-cols-1 gap-6">
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">Nome</span>
+      <input type="text" name="nome" class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" />
+    </label>
+
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">E-mail</span>
+      <input type="email" name="email" class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 placeholder:italic placeholder:text-primary-300 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" placeholder="nome@email.com" />
+    </label>
+
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">Religião</span>
+      <input type="text" name="religião" class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 placeholder:italic placeholder:text-primary-300 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" placeholder="informe sua religião: espírita, evangélico, etc (opcional)" />
+    </label>
+
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">Telefone</span>
+      <input type="text" name="telefone" class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 placeholder:italic placeholder:text-primary-300 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" placeholder="(ddd) xxxx-xxxx (opcional)" />
+    </label>
+
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">Sexo</span>
+      <input type="text" name="sexo" class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 placeholder:italic placeholder:text-primary-300 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" placeholder="Informe seu sexo: masculino, feminino (opcional)" />
+    </label>
+
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">Localidade</span>
+      <input type="text" name="telefone" class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 placeholder:italic placeholder:text-primary-300 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" placeholder="Cidade, Estado, País (opcional)" />
+    </label>
+
+    <label class="block">
+      <span class="font-extrabold italic text-primary-700">Mensagem</span>
+      <textarea class="block w-full rounded-md border-transparent bg-primary-100 text-primary-800 focus:border-primary-400 focus:bg-primary-50 focus:ring-0" rows="3"></textarea>
+    </label>
+
+    <div class="mt-2 block">
+      <label class="inline-flex items-center">
+        <input type="checkbox" name="adicione em sua lista" class="rounded border-transparent bg-primary-100 focus:border-transparent focus:bg-primary-50 focus:ring-1 focus:ring-primary-500 focus:ring-offset-2" />
+        <span class="ml-2 font-medium italic text-primary-700">Gostaria de assinar sua lista de discussões e receber notícias!</span>
+      </label>
+    </div>
+
+    <input type="hidden" name="_next" value="http://127.0.0.1:1313/" class="form-control" placeholder="Full Name" required />
+    <input type="hidden" name="_subject" value="Alguém te contactou via www.cicero.com!" />
+
+    <button type="submit" class="inline-flex w-1/6 items-center justify-center rounded-lg bg-primary-600 px-5 py-2 font-bold text-white hover:bg-primary-700 focus:outline-none focus:ring-4">
+      Enviar
+      <svg class="ms-2 h-3.5 w-3.5 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+      </svg>
+    </button>
+  </div>
+</form>
